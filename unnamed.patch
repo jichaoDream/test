@@ -1,0 +1,28 @@
+Index: src/com/Damoservlet/controller/LoginController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/com/Damoservlet/controller/LoginController.java	(date 1543822676913)
++++ src/com/Damoservlet/controller/LoginController.java	(date 1543822676913)
+@@ -0,0 +1,20 @@
++package com.Damoservlet.controller;
++
++import javax.servlet.ServletException;
++import javax.servlet.http.HttpServlet;
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++import java.io.IOException;
++
++public class LoginController extends HttpServlet {
++    @Override
++    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
++       doPost(req,resp);
++    }
++
++    @Override
++    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
++       resp.sendRedirect("page1/jichao/login.jsp");
++
++    }
++}
