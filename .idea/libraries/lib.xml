@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://F:/应用软件/javaweb/apache-tomcat-7.0.56/apache-tomcat-7.0.56/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://F:/应用软件/javaweb/apache-tomcat-7.0.56/apache-tomcat-7.0.56/lib" recursive="false" />
+  </library>
+</component>

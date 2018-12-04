@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--配置servlet-->
+<servlet>
+    <servlet-name>StudentList</servlet-name>
+    <servlet-class>com.Damoservlet.controller.StudentListServlet</servlet-class>
+</servlet>
+    <!--配置映射-->
+    <servlet-mapping>
+        <servlet-name>StudentList</servlet-name>
+        <!--访问的入口地址-->
+        <url-pattern>/stuList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.Damoservlet.controller.LoginController</servlet-class>
+    </servlet>
+    <!--配置映射-->
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <!--访问的入口地址-->
+        <url-pattern>/Login.do</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
